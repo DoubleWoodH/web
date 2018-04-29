@@ -169,17 +169,17 @@ func Get(route string, handler interface{}) {
 
 // Post adds a handler for the 'POST' http method in the main server.
 func Post(route string, handler interface{}) {
-	mainServer.addRoute(route, "POST", handler)
+	mainServer.Post(route, handler)
 }
 
 // Put adds a handler for the 'PUT' http method in the main server.
 func Put(route string, handler interface{}) {
-	mainServer.addRoute(route, "PUT", handler)
+	mainServer.Put(route, handler)
 }
 
 // Delete adds a handler for the 'DELETE' http method in the main server.
 func Delete(route string, handler interface{}) {
-	mainServer.addRoute(route, "DELETE", handler)
+	mainServer.Delete(route, handler)
 }
 
 // Match adds a handler for an arbitrary http method in the main server.
